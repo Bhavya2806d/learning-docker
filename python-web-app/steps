@@ -1,0 +1,11 @@
+fork repo
+cd python-web-app
+ls 
+#having dockerfile in current directory
+docker build .
+docker run -it dockerid
+#not run need to map port 8000 container to 8000 host
+docker run -p 8000:8000 -it dockerid
+http://<ipaddress>:8000/demo/ ->browser
+add inbound rules
+type-custom tcp,source -anywhere,port-8000
