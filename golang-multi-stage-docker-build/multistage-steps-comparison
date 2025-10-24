@@ -1,0 +1,20 @@
+fork repo
+cd without multistage
+docker build -t calculator-without-multistage .
+docker run -it  calculator-without-multistage
+docker images
+
+cd with multistage
+docker build -t calculator-with-multistage .
+docker run -it  calculator-with-multistage
+docker images
+
+* Comparison
+docker images
+  
+REPOSITORY                                    TAG       IMAGE ID       CREATED          SIZE
+calculator-with-multistage                    latest    98b124605314   35 seconds ago   1.96MB
+calculator-wothout-multistage                 latest    7e84f34e6a59   3 minutes ago    647MB
+<none>                                        <none>    1849e8883cba   21 hours ago     601MB
+tyagibhavya/my-first-dockerimage-dockerfile   latest    cbe009366de8   24 hours ago     554MB
+hello-world                                   latest    1b44b5a3e06a   2 months ago     10.1kB
