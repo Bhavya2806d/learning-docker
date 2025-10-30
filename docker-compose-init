@@ -1,0 +1,43 @@
+problem with docker
+   1)managing the lifestyle- taking dependencies into consideration
+   2)running so many build and run docker commands
+   
+docker-compose- tool by docker Inc
+   
+docker-compose -> manage multi container application
+
+  clone repo-three tier architecture demo -instana robot 
+docker compose up ->starts all your container
+ browser- localhost:8080
+docker compose down -.remove all your container
+ctrl c->stop all your container
+
+  need dockerfile
+  docker yaml files->explain how to build,run your container 
+  yaml file still reference to your dockerfile for docker image
+
+    awesome compose -a lot of docker compose examples
+    clone repo
+    nginx/nodejs/redis
+    cd nginx/nodejs/redis
+    docker compose up
+    browser-localhost:80
+    without compose
+    docker build web dockerfile loc
+    docker build nginx dockerfile loc
+    docker run -d -p 5000:81 web1
+    docker run -d -p 5000:82 web2
+    docker run -d -p 80:80 nginx
+
+ docker compose- use in localdevelopment, cicd ,testing
+     
+      
+docker init
+      
+    
+    
+    
+  
+  
+  
+  
