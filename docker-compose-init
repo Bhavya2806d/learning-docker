@@ -33,6 +33,32 @@ ctrl c->stop all your container
      
       
 docker init
+
+clone repo-pthon-for-devops
+project->simple-python-app
+cd simple-python-app
+For appln -checking running or not 
+python3 app.py
+pip3 install -r requirements.txt
+python3 app.py
+browser-localhost:8000
+docker init
+language-Python
+version-3.10.0
+port-8000
+cmd to run your app->python3 app.py
+ will create 
+.dockerignore
+Dockerfile
+compose.yaml
+README.Docker.md->tell how to access container
+vim compose.yaml
+docker compose up --build
+browser-access through url
+http://127.0.0.1:8000
+ 
+
+
       
     
     
